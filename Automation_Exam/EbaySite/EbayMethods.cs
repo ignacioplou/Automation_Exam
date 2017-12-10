@@ -124,7 +124,7 @@ namespace Automation_Exam.EbaySite
             List<ProductsData> orderedPriceDesc = list.OrderByDescending(p => p.TotalPrice).ToList();
             foreach (ProductsData byTotalPrice in orderedPriceDesc.OrderByDescending(p => p.TotalPrice))
             {
-                Console.WriteLine(byTotalPrice.ProductName + " - " + byTotalPrice.TotalPrice.ToString());
+                Console.WriteLine(byTotalPrice.TotalPrice.ToString() + " - " + byTotalPrice.ProductName);
             }
         }
 
